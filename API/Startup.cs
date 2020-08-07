@@ -31,6 +31,7 @@ namespace API
             opt.UseSqlite(Configuration.GetConnectionString
             ("DefaultConnection"));
         });
+            
             services.AddControllers();
         }
 
