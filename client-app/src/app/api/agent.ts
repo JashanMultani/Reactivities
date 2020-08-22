@@ -21,6 +21,7 @@ if(error.message === 'Network Error' && !error.response) {
     if(status === 500) {
         toast.error('Server error - check terminal for info!')
     }
+    throw error;
 })
 
 axios.interceptors.response.use(undefined, error => {
